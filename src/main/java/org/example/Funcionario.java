@@ -48,7 +48,7 @@ public class Funcionario {
     }
 
     public double bonusAnual() {
-        return this.salario * 1.1;
+        return this.salario * 0.1;
     }
     public double bonusAnual(double porcentagemBonus) {
         return this.salario + porcentagemBonus;

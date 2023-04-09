@@ -17,6 +17,6 @@ public class Seguranca extends Funcionario {
 
     @Override
     public double bonusAnual() {
-        return this.getSalario() * 1.3;
+        return super.bonusAnual() * 1.1;// com this da loop infinito por nao ir ate a classe pai
     }
 }
