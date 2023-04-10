@@ -6,7 +6,7 @@ public class Funcionario {
     private String codigoDeIdentificação;
     private double salario;
 
-    private  Endereco endereco;
+    private Endereco endereco;
 
     public Funcionario(String nome, String codigoDeIdentificação, double salario, Endereco endereco) {
         this.nome = nome;
@@ -14,6 +14,7 @@ public class Funcionario {
         this.salario = salario;
         this.endereco = endereco;
     }
+
 
     public String getNome() {
         return nome;
@@ -48,9 +49,15 @@ public class Funcionario {
     }
 
     public double bonusAnual() {
-        return this.salario * 0.1;
+        return this.salario * 1.1;
     }
-    public double bonusAnual(double porcentagemBonus) {
-        return this.salario + porcentagemBonus;
+
+    public void getInformacoesFuncionario() {
+        this.endereco.getInformacoesEndereco();
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Codigo de identificação: " + this.codigoDeIdentificação);
+        System.out.println("Salario: " + this.salario);
+        System.out.println("Bonus anual: " + this.bonusAnual());
+
     }
 }

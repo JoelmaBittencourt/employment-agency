@@ -2,22 +2,19 @@ package org.example;
 
 public class Gerente extends Funcionario {
 
-    private int senha;
+    private String senha;
 
-    public Gerente(String nome, String codigoDeIdentificação, double salario, Endereco endereco) {
+    public Gerente(String nome, String codigoDeIdentificação, double salario, Endereco endereco, String senha) {
         super(nome, codigoDeIdentificação, salario, endereco);
-    }
-
-    public void setSenha(int senha) {
         this.senha = senha;
     }
 
-    public boolean autentica(int senha) {
-        if (this.senha == senha) {
-            return true;
-        } else {
-            return false;
-        }
+    public String getSenha() {
+        return senha;
     }
 
+    @Override
+    public double bonusAnual() {
+        return super.getSalario() * 1.2;
+    }
 }

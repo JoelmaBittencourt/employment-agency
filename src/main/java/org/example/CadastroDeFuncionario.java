@@ -7,18 +7,21 @@ public class CadastroDeFuncionario {
         var endereco = new Endereco("07125", "rua das flores", "47");
 
 
-        var seguranca = new Seguranca("Jose", "001", 2000.00, endereco);
-        System.out.println(seguranca.verificaPorteDeArma(false));
-        System.out.println("Salario + bonus de " + seguranca.getNome() + " = " + seguranca.bonusAnual() + seguranca.getEndereco().getCep());
+        var seguranca = new Seguranca("Jose", "001", 1000.00, endereco);
+        seguranca.getInformacoesFuncionario();
 
-
-        var gerente = new Gerente("Maria", "001", 2000.00, endereco);
+        var gerente = new Gerente("Maria", "001", 2000.00, endereco, "senha");
         gerente.bonusAnual();
-        gerente.getEndereco().informacoes();
         System.out.println("Salario + bonus de " + gerente.getNome() + " = " + gerente.bonusAnual());
+System.out.println("--------");
 
-
+        var funcionario = new Funcionario("Saulo", "003", 3.000, endereco);
+        funcionario.getInformacoesFuncionario();
 
     }
 }
 //protected = public para filhos, quebra o encapsulamento, use get
+// e a função do construtor??
+// e o super?
+//usar o this ou super da no mesmo
+//sobrecarga de metodos e construtore= polimorfismo em tempo de compilação

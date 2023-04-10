@@ -30,10 +30,10 @@ public class Endereco {
         return complemento;
     }
 
-    public void informacoes(){
+    public void getInformacoesEndereco(){
         System.out.println("Cep: "+ getCep() );
         System.out.println("Rua: "+ getRua());
         System.out.println("Numero: "+ getNumero());
-        System.out.println("Complemento"+ getComplemento());
+        System.out.println("Complemento "+ getComplemento());
     }
 }
