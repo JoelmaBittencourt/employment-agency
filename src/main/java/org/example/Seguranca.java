@@ -1,13 +1,14 @@
 package org.example;
 
 public class Seguranca extends Funcionario {
-boolean porteDeArma;
+    boolean porteDeArma;
 
-    public Seguranca(String nome, String codigoDeIdentificação, double salario, Endereco endereco) {
+    public Seguranca(String nome, String codigoDeIdentificação, double salario, Endereco endereco, boolean porteDeArma) {
         super(nome, codigoDeIdentificação, salario, endereco);
     }
+
     @Override
-    public void getInformacoesFuncionario(){
+    public void getInformacoesFuncionario() {
         super.getInformacoesFuncionario();
         System.out.println("Porte de arma " + this.porteDeArma);
         System.out.println("-----------------------");
