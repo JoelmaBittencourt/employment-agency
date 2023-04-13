@@ -3,8 +3,10 @@ package org.example;
 public class Seguranca extends Funcionario {
     boolean porteDeArma;
 
+
     public Seguranca(String nome, String codigoDeIdentificação, double salario, Endereco endereco, boolean porteDeArma) {
         super(nome, codigoDeIdentificação, salario, endereco);
+        //this.porteDeArma = porteDeArma;
     }
 
     @Override
