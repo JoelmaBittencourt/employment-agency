@@ -10,3 +10,6 @@ quando usa a palavra reservada extends herda tudo que estiver na classe extendid
 3- pra subscrever um método da classe pai na classe filho é preciso manter sua assinatura()
 anotar com @Override é uma boa pratica
 
+4- relacdionamento de classes
+
+5- sobrecarga de metodos e construtores é polimrfismo em tempo de compilação
